@@ -16,3 +16,6 @@ class User(db.Model):
         return '<User %r>' % self.username
 
 
+@app.route('/')
+def index():
+    return "你好"
