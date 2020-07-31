@@ -1,0 +1,9 @@
+DIALECT = '' #使用的是哪种数据库，如mysql
+DRIVE = '' #驱动，如pymysql
+USERNAME = '' #数据库用户名
+PASSWORD = '' #数据库密码
+HOST = '' #IP 本地是localhost或者127.0.0.1或者自己内网IP
+PORT = '' #端口 默认是3306
+DATABASE = '' #数据库名字
+
+SQLALCHEMY_DATABASE_URI = '{}+{}://{}:{}@{}:{}/{}'.format(DIALECT, DRIVE, USERNAME, PASSWORD, HOST, PORT, DATABASE)
