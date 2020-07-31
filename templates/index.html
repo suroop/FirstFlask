@@ -5,8 +5,11 @@
     <title>{{ name }}'s Watchlist</title>
     <link rel="icon" href="{{ url_for('static', filename='cmd.ico') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" type="text/css">
+    <script src="{{ url_for('static', filename='jquery.js') }}"></script>
+    <script src="{{ url_for('static', filename='main.js') }}"></script>
 </head>
 <body>
+    <img src="{{ url_for('static', filename='images/avatar.png') }}" alt="" id="BP">
     <h2>
         <img alt="Avatar" class="avatar" src="{{ url_for('static', filename='images/avatar.png') }}">
         {{ name }}'s Watchlist

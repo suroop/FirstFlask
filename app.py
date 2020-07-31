@@ -18,4 +18,4 @@ class User(db.Model):
 
 @app.route('/')
 def index():
-    return "你好"
+    return "hi"
